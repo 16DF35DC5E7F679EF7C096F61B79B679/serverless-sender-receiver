@@ -30,7 +30,7 @@ func Handler(ctx context.Context) (Response, error) {
 		return Response{StatusCode: 500}, err
 	}
 	//queueUrl := result.QueueUrl
-	queueUrl := "https://sqs.us-east-1.amazonaws.com/221863034380/common-queue"
+	queueUrl := ""
 	fmt.Println("queueUrl is: "+ queueUrl)
 	fmt.Println("Credentials are: ")
 	fmt.Println(sess.Config.Credentials.Get())
